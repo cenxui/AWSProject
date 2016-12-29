@@ -30,5 +30,8 @@ dependencies {
     
     // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3
 	compile group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.11.69'
+	
+	// https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-machinelearning
+	compile group: 'com.amazonaws', name: 'aws-java-sdk-machinelearning', version: '1.11.73'
     
 }
