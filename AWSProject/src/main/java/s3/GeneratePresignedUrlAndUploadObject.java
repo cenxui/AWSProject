@@ -57,12 +57,13 @@ public class GeneratePresignedUrlAndUploadObject {
 		expiration.setTime(milliSeconds);
 		
 		GeneratePresignedUrlRequest generatePresignedUrlRequest = 
-			    new GeneratePresignedUrlRequest("awsconsoletest-cenxui-log", "cenxui");
+			    new GeneratePresignedUrlRequest("awsconsoletest-cenxui-log", "cenxui2.zip");
+		
 		generatePresignedUrlRequest.setMethod(HttpMethod.PUT); 
 		generatePresignedUrlRequest.setExpiration(expiration);
-
+		
 		URL url = s3client.generatePresignedUrl(generatePresignedUrlRequest); 
-//		UploadObject(url);
+		UploadObject(url);
 		System.out.println("Pre-Signed URL = " + url.toString());
 		} catch (AmazonServiceException exception) {
 			System.out.println("Caught an AmazonServiceException, " +
