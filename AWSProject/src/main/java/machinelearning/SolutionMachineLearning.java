@@ -2,7 +2,7 @@ package machinelearning;
 
 import com.amazonaws.services.machinelearning.AmazonMachineLearningClient;
 
-import util.Util;
+import cenxui.util.aws.AWS;
 
 public class SolutionMachineLearning {
 
@@ -13,7 +13,7 @@ public class SolutionMachineLearning {
 		String recipeFilename = "recipe.json";
 		String friendlyEntityName = "Java Marketing Sample";
 		
-		AmazonMachineLearningClient client = new AmazonMachineLearningClient(Util.getCredentials());
+		AmazonMachineLearningClient client = new AmazonMachineLearningClient(AWS.getCredentials());
 
 	}
 

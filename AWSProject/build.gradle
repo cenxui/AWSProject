@@ -33,5 +33,14 @@ dependencies {
 	
 	// https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-machinelearning
 	compile group: 'com.amazonaws', name: 'aws-java-sdk-machinelearning', version: '1.11.73'
+	
+	// https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
+	compile group: 'com.amazonaws', name: 'aws-java-sdk-dynamodb', version: '1.11.75'
+	
+	// https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-datapipeline
+	compile group: 'com.amazonaws', name: 'aws-java-sdk-datapipeline', version: '1.11.76'
+	
+	// Library of https://github.com/stleary/JSON-java 
+    compile 'org.json:json:20160810'
     
 }

@@ -1,10 +1,10 @@
-package util;
+package cenxui.util.aws;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 
-public class Util {
+public class AWS {
 	/*
 	 * Before running the code: Fill in your AWS access credentials in the
 	 * provided credentials file template, and be sure to move the file to the
